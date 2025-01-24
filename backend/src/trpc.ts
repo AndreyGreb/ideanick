@@ -32,7 +32,6 @@ const trpc = initTRPC.create()
 
 export const trpcRouter = trpc.router({
   getIdeas: trpc.procedure.query(() => {
-    throw new Error('Test Error')
     return { ideas }
   }),
 })
